@@ -1,0 +1,155 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage{graphicx}
+\usepackage[colorlinks,urlcolor=blue]{hyperref}
+\usepackage{color}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage[resetlabels]{multibib}
+
+% Set margins.
+\oddsidemargin=0.0in
+\evensidemargin=0.0in
+\textwidth=6.5in
+\voffset=-0.125in
+\headheight=0.0in
+\topmargin=0.0in
+\textheight=9.0in
+
+% Define colors.
+\definecolor{addresscolor}{rgb}{0.2,0.2,0.2}
+\definecolor{datecolor}{rgb}{0.5,0.5,0.5}
+
+% Turn off page numbering.
+\pagestyle{fancy}
+\fancyhf{}
+\lfoot{\datestyle M.A. Gully-Santiago}
+\cfoot{\datestyle \thepage}
+\rfoot{\datestyle August 2014}
+\renewcommand{\headrulewidth}{0.0pt}
+
+% Change font.
+\renewcommand{\familydefault}{\sfdefault}
+
+% Set parameters and content.
+\newcommand{\namestyle}{\Huge \scshape}
+\newcommand{\deptstyle}{\footnotesize \sffamily \scshape}
+\newcommand{\addressstyle}{\color{addresscolor}  \footnotesize \sffamily \upshape}
+\newcommand{\datestyle}{\color{datecolor} \footnotesize \sffamily \upshape}
+
+% Remove list labels.
+\renewcommand{\labelitemi}{}
+\renewcommand{\labelitemii}{}
+
+% Define bibliographies.
+\newcites{j,c}{Journal Publications,Conference Publications}
+
+
+\begin{document}
+
+% Print title.
+\begin{flushright}
+    \namestyle Michael A. Gully-Santiago \\[0.3em]
+    \addressstyle 
+    2515 Speedway St, Stop C1400, Austin, TX 78704 USA \\
+    Phone: 1-512-471-3387\\
+    Email: gully@astro.as.utexas.edu \\
+    Web: \url{http://gigayear.weebly.com}
+\end{flushright}
+
+\small
+
+\section*{Education}
+
+\subparagraph{Ph. D., Astronomy \emph{anticipated}}
+University of Texas at Austin$\cdot$ Austin, TX $\cdot$ 8/2008--5/2015
+\begin{itemize}
+    \item Advisor: D.T. Jaffe (Chair, Department of Astronomy)
+    \item Dissertation: ``Innovative Technologies for and Observational Studies of Star and Planet Formation''
+\end{itemize}
+
+\subparagraph{B. A., Astronomy \& Physics}
+Boston University $\cdot$ Boston, MA $\cdot$ 9/2003--5/2007
+\begin{itemize}
+    \item College Prize for Excellence in Astronomy
+\end{itemize}
+
+
+\section*{Honors, Awards, and Service}
+
+\begin{itemize}
+    \item Recipient, David Benfield Memorial fellowship, 2014
+    \item \emph{Nano Night} 3rd Place Poster, Center for Nano- and Molecular Science, 2013
+    \item Recipient, NASA Graduate Student Research Program Fellowship, JPL Microdevices Lab, 2010-2013
+    \item Graduate student representative, elected by peers, 2012
+    \item Delegate, UTexas Graduate Student Assembly, 2012 
+    \item Recipient, Dean's Prestigious Fellowship Supplement, 2010\& 2011
+\end{itemize}
+
+
+\section*{Research Experience}
+
+\subparagraph{Si diffractive optics group, Dept. of Astronomy}
+University of Texas at Austin $\cdot$ Austin, TX $\cdot$ 9/2008--6/2014
+\begin{itemize}
+    \item Cleanroom experience
+    \item Metrology, etc, etc.
+\end{itemize}
+
+\subparagraph{E-beam group, Microdevices Laboratory}
+NASA Jet Propulsion Lab $\cdot$ Pasadena, CA $\cdot$ 9/20010--9/2013
+\begin{itemize}
+    \item Electron beam lithography
+\end{itemize}
+
+% Publications.
+\bibliographystylej{IEEEtran}
+\bibliographystylec{IEEEtran}
+
+\nocitej{2014arXiv1408.1278K}
+\nocitec{2013AN....334..159J}
+\nocitec{2012SPIE.8550E..1BH}
+\nocitec{2012SPIE.8450E..2SG}
+\nocitec{2011ASPC..448..633G}
+\nocitec{2011AAS...21743305D}
+\nocitec{2010SPIE.7739E..3SG}
+\nocitec{2010SPIE.7739E..4LW}
+\nocitec{2010SPIE.7735E..2KL}
+\nocitec{2010SPIE.7735E..1MY}
+\nocitec{2010SPIE.7731E..0CG}
+\bibliographyj{gullyCV}
+\bibliographyc{gullyCV}
+
+
+\section*{Service and Leadership Activities}
+
+
+
+\section*{Talks}
+
+\begin{itemize}
+    \item ``YBDS and IGs'' Star Formation Lunch, Jet Propulsion Lab, Pasadena, CA, June, 2013
+    \item ``Immersion Gratings'' SPIE Astronomical Telescope and Instrumentation, Amsterdam, NL, July, 2012
+    \item ``High resolution spectrosopy'' Board of Visitors meeting, Austin, TX, Feb, 2012
+
+\end{itemize}
+
+
+\section*{Teaching Experience}
+
+\subparagraph{Faculty member and Astronomer}
+Clay Center Observatory at the Dexter \& Southfield Schools  $\cdot$ Brookline, MA $\cdot$ 6/2005--6/2008
+
+\subparagraph{Teaching Assistant} 
+Boston University $\cdot$ Boston, MA $\cdot$ 2006--2007
+
+
+\section*{Computer Skills}
+
+\begin{itemize}
+    \item \textbf{Languages} \ IDL, Python, Mathematica, Excel
+    \item \textbf{Version Control} \ Git, Github
+    \item \textbf{OS} \ Mac OS X, Unix/Linux
+\end{itemize}
+
+
+\end{document}
