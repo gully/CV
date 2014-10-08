@@ -1,0 +1,140 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{graphicx}
+\usepackage[colorlinks,urlcolor=blue]{hyperref}
+\usepackage{color}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage[resetlabels]{multibib}
+
+% Set margins.
+\oddsidemargin=0.0in
+\evensidemargin=0.0in
+\textwidth=6.5in
+\voffset=-0.125in
+\headheight=0.0in
+\topmargin=0.0in
+\textheight=9.0in
+
+% Define colors.
+\definecolor{addresscolor}{rgb}{0.2,0.2,0.2}
+\definecolor{datecolor}{rgb}{0.5,0.5,0.5}
+
+% Turn off page numbering.
+\pagestyle{fancy}
+\fancyhf{}
+\lfoot{\datestyle M.A. Gully-Santiago}
+\cfoot{\datestyle \thepage}
+\rfoot{\datestyle September 2014}
+\renewcommand{\headrulewidth}{0.0pt}
+
+% Change font.
+\renewcommand{\familydefault}{\sfdefault}
+
+% Set parameters and content.
+\newcommand{\namestyle}{\Large}
+\newcommand{\deptstyle}{\footnotesize \sffamily \scshape}
+\newcommand{\addressstyle}{\color{addresscolor}  \footnotesize \sffamily \upshape}
+\newcommand{\datestyle}{\color{datecolor} \footnotesize \sffamily \upshape}
+
+% Remove list labels.
+\renewcommand{\labelitemi}{}
+\renewcommand{\labelitemii}{}
+
+% Define bibliographies.
+\newcites{j,c}{Main Products, Other Significant Products}
+
+
+\begin{document}
+
+% Print title.
+    \namestyle Biographical Sketch of Michael A. Gully-Santiago \\[0.3em]
+     \normalsize Citizenship: United States Citizen
+
+\normalsize
+
+%%%%%%
+\begin{center}
+ \large \textbf{Professional preparation}
+\end{center}
+\normalsize
+%%%%%%
+
+Boston University, Astronomy \& Physics, BA 2007
+
+University of Texas at Austin, Astronomy, PhD- \emph{anticipated} 2015
+
+%%%%%%
+\begin{center}
+ \large \textbf{Appointments}
+\end{center}
+\normalsize
+%%%%%%
+
+Researcher, Dept. of Astronomy UT Austin, TX $\cdot$ 2008-2014
+
+GSRP Fellow, NASA JPL Microdevices Lab, Pasadena, CA $\cdot$ 2010-2013
+
+Faculty member, Dexter and Southfield School, Brookline, MA $\cdot$ 2007-2008
+
+Astronomer, Clay Center Observatory, Brookline, MA $\cdot$ 2005-2008
+
+REU student, McDonald Observatory, Fort Davis, TX $\cdot$ 2006
+
+Community Educator, Center for Adult Education, Brookline, MA $\cdot$ 2005-2008
+
+
+\small
+
+% Publications.
+\bibliographystylej{IEEEtran}
+\bibliographystylec{IEEEtran}
+
+\nocitej{2012SPIE.8450E..2SG}
+\nocitej{2011ASPC..448..633G}
+\nocitej{2010SPIE.7739E..3SG}
+\nocitej{2014arXiv1408.1278K}
+\nocitej{2013AN....334..159J}
+%\nocitec{2012SPIE.8550E..1BH}
+\nocitec{2010SPIE.7739E..4LW}
+%\nocitec{2010SPIE.7735E..2KL}
+\nocitec{2010SPIE.7735E..1MY}
+\nocitec{2010SPIE.7731E..0CG}
+\bibliographyj{gullyCV}
+\bibliographyc{gullyCV}
+
+\normalsize
+
+%%%%%%
+\begin{center}
+ \large \textbf{Synergistic Activities}
+\end{center}
+\normalsize
+%%%%%%
+
+\begin{itemize}
+
+\item \textbf{Host, They Blinded Me with Science, a science podcast, KVRX, 91.7FM $\cdot$ Austin, TX$\cdot$ 2013--5/2014} I successfully procured seed funding from College of Natural Sciences to establish a science podcast.  I produced 30 original podcasts with $\sim3000$ collective online streams plus iTunes downloads.  I recruited guests, conducted interviews, edited audio files (with Audacity), managed digital content, authored descriptions, and posted each podcast to the web.  I promoted the show with social media.
+
+\item \textbf{Interactive museum-style educational installation, Department of Astronomy $\cdot$ Austin, TX$\cdot$ 7/2013--9/2014}  I came up with this original outreach idea and sought collaborators.  I procured \$4.5k in funding from internally reviewed proposal.  I designed, constructed, and completed interactive display cases.  I measured over 600 user interactions since its installation.  
+
+\item \textbf{Mentor for undergraduate student, Amanda T, Astronomy Dept., UT Austin, TX $\cdot$ 2013--2014} Trained Amanda in computer programming, data analysis, optics.
+
+\item \textbf{Graduate Student Representative, Astronomy Dept., UT Austin, TX $\cdot$ 2011--2012} Advocate for diversity on graduate admissions committee, liaison to faculty, ombudsman, delegate for University-wide Graduate Student Assembly.
+
+\item \textbf{Founder of cofounding member of ATXastroML, AstroData group, and D.A.T.A group}  I have been promoting interdisciplinary interactions among graduate students in statistics, computer science, biology, etc.  All of my research materials are posted to GitHub, a code sharing website.
+
+\end{itemize}
+	
+
+%%%%%%
+ \large \underline{Collaborators}
+\normalsize
+%%%%%%
+
+Allers, Katelyn (Bucknell U.); Deen, Casey (MPIA); Kendrew, Sarah (Oxford U.); Pak, Soojong (Kyung Hee University); Weinberger, Alycia (Carnegie Institute of Washington);  
+
+Thesis Advisor: Daniel T. Jaffe
+
+Proposed Postdoctoral Sponsor: Kelle Cruz
+
+\end{document}
