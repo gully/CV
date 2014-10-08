@@ -1,0 +1,236 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage{graphicx}
+\usepackage[colorlinks,urlcolor=blue]{hyperref}
+\usepackage{color}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage[resetlabels]{multibib}
+
+% Set margins.
+\oddsidemargin=0.0in
+\evensidemargin=0.0in
+\textwidth=6.5in
+\voffset=-0.125in
+\headheight=0.0in
+\topmargin=0.0in
+\textheight=9.0in
+
+% Define colors.
+\definecolor{addresscolor}{rgb}{0.2,0.2,0.2}
+\definecolor{datecolor}{rgb}{0.5,0.5,0.5}
+
+% Turn off page numbering.
+\pagestyle{fancy}
+\fancyhf{}
+\lfoot{\datestyle M.A. Gully-Santiago}
+\cfoot{\datestyle \thepage}
+\rfoot{\datestyle September 2014}
+\renewcommand{\headrulewidth}{0.0pt}
+
+% Change font.
+\renewcommand{\familydefault}{\sfdefault}
+
+% Set parameters and content.
+\newcommand{\namestyle}{\Huge \scshape}
+\newcommand{\deptstyle}{\footnotesize \sffamily \scshape}
+\newcommand{\addressstyle}{\color{addresscolor}  \footnotesize \sffamily \upshape}
+\newcommand{\datestyle}{\color{datecolor} \footnotesize \sffamily \upshape}
+
+% Remove list labels.
+\renewcommand{\labelitemi}{}
+\renewcommand{\labelitemii}{}
+
+% Define bibliographies.
+\newcites{j,c}{First Author Publications, Contributing Author Publications}
+
+
+\begin{document}
+
+% Print title.
+\begin{flushright}
+    \namestyle Michael A. Gully-Santiago \\[0.3em]
+    \addressstyle 
+    2515 Speedway St, Stop C1400, Austin, TX 78704 USA \\
+    Office phone: 1-512-471-3387\\
+    Email: gully@astro.as.utexas.edu \\
+    Web: \url{http://gigayear.weebly.com} \\
+    \includegraphics[scale=0.17]{ghmark/GitHub-Mark/PNG/GitHub-Mark-64px.png} \href{http://github.com/gully}{gully}
+\end{flushright}
+
+\small
+
+\section*{Education}
+
+\subparagraph{Ph. D., Astronomy \emph{anticipated}}
+University of Texas at Austin$\cdot$ Austin, TX $\cdot$ 8/2008--5/2015
+\begin{itemize}
+    \item Advisor: D.T. Jaffe (Chair, Department of Astronomy)
+    \item Dissertation: ``Innovative Technologies for and Observational Studies of Star and Planet Formation''
+\end{itemize}
+
+\subparagraph{B. A., Astronomy \& Physics}
+Boston University $\cdot$ Boston, MA $\cdot$ 9/2003--5/2007
+\begin{itemize}
+    \item College Prize for Excellence in Astronomy
+\end{itemize}
+
+
+\section*{Awards}
+
+\begin{itemize}
+    \item University of Texas at Austin Department of Astronomy, David Benfield Memorial fellowship, 2014
+    \item NASA Graduate Student Research Program Fellowship, JPL Microdevices Lab, 2010-2013
+    \item University of Texas at Austin Dean's Prestigious Fellowship Supplement, 2010 \& 2011
+\end{itemize}
+
+
+\section*{Research Experience and Technical Skills}
+
+\subparagraph{Si diffractive optics group, Dept. of Astronomy}
+University of Texas at Austin $\cdot$ Austin, TX $\cdot$ 9/2008--6/2014
+\begin{flushright}
+Microelectronics Research Center $\cdot$ Austin, TX $\cdot$ 9/2008--6/2013 
+
+Center for Nano and Molecular Science $\cdot$ Austin, TX $\cdot$ 9/2008--9/2013
+\end{flushright}
+
+\begin{itemize}
+    \item  \textbf{Optical metrology experience:} Zygo interferometry, polychromatic spectrophotometry for optical/IR throughput, visible and IR laser metrology for PSF characterization, 2D non-contact profilometry, IR imaging, optical microscopy
+    \item \textbf{Project management:} Assembled task book of 35 projects to guide our internal resource allocation.  Managed cross-platform lab computing resources, networking and remote management, hardware interfacing, and data curation
+\end{itemize}
+
+\begin{itemize}
+    \item \textbf{Silicon processing:} Class-100 cleanroom training, Scanning electron microscopy, reactive ion etching, anisotropic chemical wet etching, ellipsometry, spin coating,  atomic force microscopy, collaboration with MIT nanoruler
+\end{itemize}
+
+\subparagraph{E-beam group, Microdevices Laboratory}
+NASA Jet Propulsion Lab $\cdot$ Pasadena, CA $\cdot$ 9/20010--9/2013
+\begin{itemize}
+    \item High precision electron beam lithography, nanometer-scale pattern design, experimental design
+\end{itemize}
+
+\subparagraph{Magellan Telescope}
+Las Campanas Observatory $\cdot$ La Serena, Chile $\cdot$ 2010--2012
+\begin{itemize}
+    \item 7 nights over three years on IMACS and FIRE instruments
+\end{itemize}
+
+% Publications.
+\bibliographystylej{IEEEtran}
+\bibliographystylec{IEEEtran}
+
+\nocitej{2012SPIE.8450E..2SG}
+\nocitej{2011ASPC..448..633G}
+\nocitej{2010SPIE.7739E..3SG}
+\nocitec{2014arXiv1408.1278K}
+\nocitec{2013AN....334..159J}
+\nocitec{2012SPIE.8550E..1BH}
+\nocitec{2010SPIE.7739E..4LW}
+\nocitec{2010SPIE.7735E..2KL}
+\nocitec{2010SPIE.7735E..1MY}
+\nocitec{2010SPIE.7731E..0CG}
+\bibliographyj{gullyCV}
+\bibliographyc{gullyCV}
+
+
+\section*{Talks and Conference Participation}
+
+\begin{itemize}
+    \item Attendee, Astro Data Hack Week, Seattle, WA, 9/2014
+    \item Poster, SPIE Astronomical Telescopes and Instrumentation, Montreal, QC, 6/2014
+    \item Poster, PPVI, Heidelberg, Germany, 7/2013
+    \item Talk, Star Formation Lunch, Jet Propulsion Lab, Pasadena, CA, 6/2013
+    \item \textbf{Poster, Award winner- $3^{rd}$/45}, Nano Night, Center for Nano- and Molecular Science, Austin, TX, 3/2013
+    \item Poster, McDonald Observatory Board of Visitors meeting, Austin, TX, 2/2013 
+    \item \textbf{Invited Talk}, SPIE Astronomical Telescopes and Instrumentation, Amsterdam, NL, July, 2012
+    \item Poster, Cool Stars 17, Barcelona, Spain, June 2012
+    \item Attendee, American Astronomical Society meeting, Austin, TX, Jan, 2012
+    \item Talk, Very Low Mass Stars and Brown Dwarfs, ESO, Garching, Germany, 10/2011
+    \item Attendee, National Society of Black and Hispanic Physicists, Austin, TX, 9/2011
+    \item Poster, Cool Stars 16, Seattle, WA, 9/2010
+    \item Poster, SPIE Astronomical Telescopes and Instrumentation, San Diego, CA, 6/2010
+\end{itemize}
+
+\section*{Service and Leadership Activities}
+
+\subparagraph{Graduate Student Representative}
+University of Texas at Austin Department of Astronomy $\cdot$ 6/2011--6/2012
+\begin{itemize}
+    \item Elected by majority vote of peers $\cdot$ Served on graduate admissions committee
+    \item Liaison to faculty, attended faculty meetings $\cdot$ Delegate for University-wide Graduate Student Assembly
+\end{itemize}
+
+\section*{Teaching and Mentorship}
+
+\subparagraph{Mentor for undergraduate student, Amanda Turbyfill} 
+University of Texas at Austin $\cdot$ Austin, TX $\cdot$ 2013--2014
+	\begin{itemize}
+	    \item Lab experience, pair coding (IDL and Excel), tutorials in optical physics
+	\end{itemize}
+
+\subparagraph{Faculty member}
+Clay Center Observatory at the Dexter \& Southfield Schools  $\cdot$ Brookline, MA $\cdot$ 6/2007--6/2008
+
+\subparagraph{Adult and continuing education instructor}
+Brookline Adult Education  $\cdot$ Brookline, MA $\cdot$ 6/2005--6/2008
+
+\subparagraph{Night lab teaching assistant} 
+Boston University $\cdot$ Boston, MA $\cdot$ 2006--2007
+
+\section*{Public Outreach and Media Appearances}
+
+\subparagraph{Guest, They Blinded Me with Science, a science podcast}
+KVRX, 91.7FM $\cdot$ Austin, TX$\cdot$ 12/2012
+	\begin{itemize}
+	    \item ``Discovery and characterization of brown dwarfs''
+	\end{itemize}
+	
+\subparagraph{Host, They Blinded Me with Science, a science podcast}
+KVRX, 91.7FM $\cdot$ Austin, TX$\cdot$ 5/2013--5/2014
+	\begin{itemize}
+	    \item Successfully procured seed funding from College of Natural Sciences to establish podcast
+	    \item Produced 30 original podcasts with $>3000$ collective downloads and plays
+	    \item Recruited guests, conducted interviews, edited audio files, managed digital content, authored descriptions
+	\end{itemize}
+
+\subparagraph{Public talks}
+	\begin{itemize}
+	    \item \textbf{Invited talk}, McDonald Observatory Board of Visitors meeting, Austin, TX, 2/2012 \\
+	    ``High resolution infrared spectroscopy with IGRINS'' 
+	    \item Science Under the Stars, Brackenridge Field Lab, Austin, TX, 12/2012 \\
+	    ``Exploring birth-sites of our Galactic neighborhood'' 
+	\end{itemize}
+
+\subparagraph{Interactive museum-style educational installation}
+Department of Astronomy $\cdot$ Austin, TX$\cdot$ 7/2013--9/2014
+	\begin{itemize}
+	    \item Procured \$4.5k in funding from internally reviewed proposal
+	    \item Designed, constructed, and completed interactive display cases
+	    \item Over 600 measured user interactions since its installation
+	\end{itemize}
+
+\section*{Unique coursework or independent study}
+
+\subparagraph{Statistical Modeling II, Prof. James Scott}
+Statistics Department$\cdot$ 1/2014--5/2014
+
+\subparagraph{Statistics, Data Mining and Machine Learning in Astronomy}
+Independent study$\cdot$ 1/2014--8/2014
+	\begin{itemize}
+	    \item Identified and submitted 8 textbook errata via GitHub pull requests
+	    \item Made a GitHub companion page for contributions to enhanced/interactive textbook figures
+	\end{itemize}
+	
+\section*{Computer Skills}
+
+\begin{itemize}
+    \item \textbf{Languages} \ IDL, Python, IPython Notebook, Shell, Excel
+    \item \textbf{Version Control and Writing} \ git, GitHub, \LaTeX, markdown, HomeBrew
+    \item \textbf{OS} \ Mac OS X, Unix/Linux
+    \item \textbf{Educational} \ Audacity, Starry Night Pro
+    \item \textbf{Familiarity with} \ HTML, CSS, D3.js, Labview, R
+    \item \textbf{Evangelist for} \ Open Science, Reproducibility, Data Curation
+\end{itemize}
+
+
+\end{document}
