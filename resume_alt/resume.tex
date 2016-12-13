@@ -1,0 +1,128 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage{graphicx}
+\usepackage[colorlinks,urlcolor=blue]{hyperref}
+\usepackage{color}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage{fontawesome}
+\usepackage[resetlabels]{multibib}
+
+% Set margins.
+\oddsidemargin=0.0in
+\evensidemargin=0.0in
+\textwidth=6.5in
+\voffset=-0.125in
+\headheight=0.0in
+\topmargin=0.0in
+\textheight=9.0in
+
+% Define colors.
+\definecolor{addresscolor}{rgb}{0.2,0.2,0.2}
+\definecolor{datecolor}{rgb}{0.5,0.5,0.5}
+
+% Turn off page numbering.
+\pagestyle{fancy}
+\fancyhf{}
+\lfoot{\datestyle M. Gully-Santiago, Ph.D.}
+%\cfoot{\datestyle \thepage}
+\rfoot{\datestyle December 2016}
+\renewcommand{\headrulewidth}{0.0pt}
+
+% Change font.
+\renewcommand{\familydefault}{\sfdefault}
+
+% Set parameters and content.
+\newcommand{\namestyle}{\Huge \scshape}
+\newcommand{\deptstyle}{\footnotesize \sffamily \scshape}
+\newcommand{\addressstyle}{\color{addresscolor}  \footnotesize \sffamily \upshape}
+\newcommand{\datestyle}{\color{datecolor} \footnotesize \sffamily \upshape}
+
+% Remove list labels.
+\renewcommand{\labelitemi}{}
+\renewcommand{\labelitemii}{}
+
+% Define bibliographies.
+\newcites{j,c}{First Author Publications, Contributing Author Publications}
+
+
+\begin{document}
+
+% Print title.
+\begin{flushleft}
+    \namestyle Michael A. Gully-Santiago \\[0.3em]
+    \addressstyle 
+    \faMapMarker ~ 145 Suomi Rd, Unit 1  \hfill \url{gully.github.io} ~ \faExternalLink \\
+    ~ ~ Quincy, MA 02169  \hfill  \url{www.linkedin.com/in/gullys} ~ \faLinkedin \\
+    \faPhone ~ (617) 842-5905 \hfill \url{github.com/gully} ~ \faGithub \\
+    \faGlobe ~ US Citizen \hfill \textbf{igully@gmail.com} ~ \faInbox\\
+
+\end{flushleft}
+
+\small
+
+\section*{\faInstitution ~ Education and Experience}
+
+\subparagraph{Postdoctoral Scientist}
+Kavli Institute at Peking University $\cdot$ Beijing, China $\cdot$ 10/2015--10/2016
+
+\subparagraph{\textbf{Ph.D}., Astronomy}
+The University of Texas at Austin$\cdot$ Austin, TX $\cdot$ 8/2008--5/2015
+\begin{itemize}
+    \item Dissertation: ``Innovative Technologies for and Observational Studies of Star and Planet Formation''
+    \item \faRocket ~ NASA Fellow, JPL Microdevices Lab, 2010-2013
+\end{itemize}
+
+\subparagraph{\textbf{B. A.}, Astronomy \& Physics}
+Boston University $\cdot$ Boston, MA $\cdot$ 9/2003--5/2007
+
+\section*{\faLineChart ~ Projects}
+
+\subparagraph{\faCodeFork ~ \texttt{Starfish}: Open source statistical framework for spectral inference}
+Peking U. $\cdot$ \href{https://github.com/gully/Starfish}{github.com/gully/Starfish}
+\begin{itemize}
+    \item Advanced Python 3 framework employs Gaussian Process regression, PCA, MCMC, $\sim$TB model data
+    \item Main contributor behind the creator; modified parallel architecture, extended the code to model new physics; supported community involvement through docs, tutorials, GitHub issues.
+\end{itemize}
+
+\subparagraph{\faBullseye ~ \texttt{welter}: Applications of \texttt{Starfish} to fundamental physics}
+Peking U. $\cdot$ \href{https://github.com/BrownDwarf/welter/}{github.com/BrownDwarf/welter}
+\begin{itemize}
+    \item Designed and implemented statistical computations resulting in first of its kind detection of very weak signal with exceptional confidence; deployed to local hardware and supercomputing resources with custom resource management
+\end{itemize}
+
+\subparagraph{\faHourglassHalf ~ \texttt{kinder}: High precision time series analysis in \texttt{pandas}}
+Peking U. $\cdot$ \href{https://github.com/BrownDwarf/kinder}{github.com/BrownDwarf/kinder}
+\begin{itemize}
+    \item Applied Lomb-Scargle periodogram analysis and cross-validation regression methods to identify 12 targets of interest from 6,335 sets of time series; Made interactive \texttt{D3.js} dashboard with Python \texttt{Bokeh}
+\end{itemize}
+
+\subparagraph{\faBinoculars ~ \texttt{BAADE}: Needle-in-a-haystack searches for rare objects}
+UT Austin $\cdot$ \href{https://github.com/BrownDwarf/BAADE}{github.com/BrownDwarf/BAADE}
+\begin{itemize}
+    \item Wrote bespoke IDL raw data ETL code to reduce 50 GB of raw data into 530 reduced spectra
+    \item Used ML clustering, \texttt{pandas} to discover 15 rare space objects from 54,373 instance, 13 feature catalog
+\end{itemize}
+
+\subparagraph{\faSuperscript ~ Measuring tiny gaps in bonded silicon wafers}
+NASA JPL $\cdot$ \href{https://github.com/Echelle/AO_bonding_paper}{github.com/Echelle/AO\_bonding\_paper}
+\begin{itemize}
+    \item Developed and applied linear algebraic ``incoherent transfer matrix'' method to improve gap detection by $25\times$
+\end{itemize}
+
+\subparagraph{\faIndustry ~ Precision silicon optics metrology and fabrication with electron beam and photo lithography}
+\begin{center} NASA JPL $\cdot$ Pickle Microelectronics Research Center $\cdot$ UTexas Center for Nano- and Molecular Science \end{center}
+\begin{itemize}
+    \item Managed multiple device development projects; led strategy; conduit of knowledge among remote teams
+\end{itemize}
+
+\section*{\faTerminal ~ Computer Skills and Communication}
+
+\begin{itemize}
+    \item \textbf{Python}: \texttt{Jupyter Notebooks, pandas, numpy, scipy, matplotlib, seaborn, emcee, multiprocessing}
+    \item \textbf{Other:} shell scripting, \faGit, \faGithubAlt, \LaTeX, conda, SLURM,  \faApple, \faLinux, Interactive Data Language (IDL)
+    \item Active participant and speaker at Python Meetups (Beijing, Austin, Boston)
+    \item Lead organizer of data science tutorials and hackathons at PKU and UT Austin
+    \item Producer and cohost of 30 science podcasts on KVRX 91.7 FM
+\end{itemize}
+
+\end{document}
