@@ -4,6 +4,7 @@
 \usepackage{color}
 \usepackage{enumerate}
 \usepackage{fancyhdr}
+\usepackage{fontawesome}
 \usepackage[resetlabels]{multibib}
 
 % Set margins.
@@ -22,9 +23,9 @@
 % Turn off page numbering.
 \pagestyle{fancy}
 \fancyhf{}
-\lfoot{\datestyle M.A. Gully-Santiago}
+\lfoot{\datestyle M.A. Gully-Santiago, PhD}
 \cfoot{\datestyle \thepage}
-\rfoot{\datestyle November 2016}
+\rfoot{\datestyle March 2017}
 \renewcommand{\headrulewidth}{0.0pt}
 
 % Change font.
@@ -41,25 +42,24 @@
 \renewcommand{\labelitemii}{}
 
 % Define bibliographies.
-\newcites{j,c}{First Author Publications, Contributing Author Publications}
+\newcites{j,c}{\faUser ~ First Author Publications, \faUserPlus ~ Contributing Author Publications}
 
 
 \begin{document}
 
-% Print title.
 \begin{flushleft}
     \namestyle Michael A. Gully-Santiago \\[0.3em]
     \addressstyle 
-    145 Suomi Rd, Unit 1 \\
-    Quincy, MA 02169 \\
-    Email: igully@gmail.com \\
-    Web: \url{http://gully.github.io} \\
-    \includegraphics[scale=0.17]{ghmark/GitHub-Mark/PNG/GitHub-Mark-64px.png} \href{http://github.com/gully}{gully}
+    \faMapMarker ~ East Bay Area  \hfill \url{gully.github.io} ~ \faExternalLink \\
+    ~ ~ Oakland, CA  \hfill  \url{www.linkedin.com/in/gullys} ~ \faLinkedin \\
+    \faPhone ~ (617) 842-5905 \hfill \url{github.com/gully} ~ \faGithub \\
+    \faGlobe ~ US Citizen \hfill \textbf{igully@gmail.com} ~ \faInbox\\
+
 \end{flushleft}
 
 \small
 
-\section*{Education}
+\section*{\faGraduationCap ~ Education}
 
 \subparagraph{Ph. D., Astronomy}
 University of Texas at Austin$\cdot$ Austin, TX $\cdot$ 8/2008--5/2015
@@ -75,7 +75,7 @@ Boston University $\cdot$ Boston, MA $\cdot$ 9/2003--5/2007
 \end{itemize}
 
 
-\section*{Awards}
+\section*{\faTrophy ~ Awards}
 
 \begin{itemize}
     \item University of Texas at Austin Department of Astronomy, David Benfield Memorial fellowship, 2014
@@ -84,7 +84,7 @@ Boston University $\cdot$ Boston, MA $\cdot$ 9/2003--5/2007
 \end{itemize}
 
 
-\section*{Research Experience and Technical Skills}
+\section*{\faWrench ~ Research Experience and Technical Skills}
 
 \subparagraph{Postdoctoral Research}
 Kavli Institute for Astronomy and Astrophysics $\cdot$ Beijing, China $\cdot$ 10/2015--10/2016
@@ -112,12 +112,15 @@ Las Campanas Observatory $\cdot$ La Serena, Chile $\cdot$ 2010--2012
 \bibliographystylec{IEEEtran}
 
 
-\nocitej{gullysubmitted}
+\nocitej{2017ApJ...836..200G}
 \nocitej{2015ApOpt..5410177G}
 \nocitej{2014SPIE.9151E..5KG}
 \nocitej{2012SPIE.8450E..2SG}
 \nocitej{2011ASPC..448..633G}
 \nocitej{2010SPIE.7739E..3SG}
+\nocitec{2016arXiv161109923D}
+\nocitec{2016ApJ...831..133H}
+\nocitec{2016SPIE.9908E..0CM}
 \nocitec{2014SPIE.9152E..02K}
 \nocitec{2014SPIE.9151E..1GB}
 \nocitec{2014SPIE.9147E..22J}
@@ -132,9 +135,11 @@ Las Campanas Observatory $\cdot$ La Serena, Chile $\cdot$ 2010--2012
 \bibliographyc{gullyCV}
 
 
-\section*{Talks and Conference Participation}
+\section*{\faVolumeUp ~ Talks and Conference Participation}
 
 \begin{itemize}
+    \item \emph{upcoming} Talk, Fundamental properties of youngs stars, KIPAC, Stanford University, CA, 3/2017
+    \item Talk, Abolute stellar ages and planet formation timescales, Bay Area Exoplanets, NASA Ames, CA, 3/2017
     \item Talk, Measuring Fundamental Properties of Young Stars, Columbia U., NYC, NY, 11/2016
     \item Talk, Measuring Fundamental Properties of Young Stars, Simons CCA, NYC, NY, 11/2016
     \item Talk, Measuring Fundamental Properties of Young Stars, Boston U., Boston, MA 11/2016
@@ -157,7 +162,14 @@ Las Campanas Observatory $\cdot$ La Serena, Chile $\cdot$ 2010--2012
     \item Poster, SPIE Astronomical Telescopes and Instrumentation, San Diego, CA, 6/2010
 \end{itemize}
 
-\section*{Service and Leadership Activities}
+
+\section*{\faPlus ~ Teaching, Service, Leadership}
+
+\subparagraph{Statistical computing tutorial leader} 
+Kavli Institute for Astronomy \& Astrophysics $\cdot$ Beijing, China $\cdot$ 2015--2016
+
+\subparagraph{Mentor for undergraduate student, A. Turbyfill} 
+University of Texas at Austin $\cdot$ Austin, TX $\cdot$ 2013--2014
 
 \subparagraph{Graduate Student Representative}
 University of Texas at Austin Department of Astronomy $\cdot$ 6/2011--6/2012
@@ -165,15 +177,6 @@ University of Texas at Austin Department of Astronomy $\cdot$ 6/2011--6/2012
     \item Elected by majority vote of peers $\cdot$ Served on graduate admissions committee
     \item Liaison to faculty, attended faculty meetings $\cdot$ Delegate for University-wide Graduate Student Assembly
 \end{itemize}
-
-\section*{Teaching and Mentorship}
-
-\subparagraph{Statistical computing tutorial leader} 
-Kavli Institute for Astronomy \& Astrophysics $\cdot$ Beijing, China $\cdot$ 2015--2016
-
-
-\subparagraph{Mentor for undergraduate student, A. Turbyfill} 
-University of Texas at Austin $\cdot$ Austin, TX $\cdot$ 2013--2014
 
 \subparagraph{Faculty member}
 Clay Center Observatory at the Dexter \& Southfield Schools  $\cdot$ Brookline, MA $\cdot$ 6/2007--6/2008
@@ -184,7 +187,7 @@ Brookline Adult Education  $\cdot$ Brookline, MA $\cdot$ 6/2005--6/2008
 \subparagraph{Night lab teaching assistant} 
 Boston University $\cdot$ Boston, MA $\cdot$ 2006--2007
 
-\section*{Public Outreach and Media Appearances}
+\section*{\faYoutubePlay ~ Public Outreach and Media Appearances}
 
 \subparagraph{Guest, They Blinded Me with Science, a science podcast}
 KVRX, 91.7FM $\cdot$ Austin, TX$\cdot$ 12/2012
@@ -211,7 +214,7 @@ KVRX, 91.7FM $\cdot$ Austin, TX$\cdot$ 5/2013--5/2014
 \subparagraph{Interactive museum-style educational installation}
 Department of Astronomy $\cdot$ Austin, TX$\cdot$ 7/2013--9/2014
 
-\section*{Unique coursework or independent study}
+\section*{\faUniversity ~ Unique coursework or independent study}
 
 \subparagraph{Statistical Modeling II, Prof. James Scott}
 Statistics Department$\cdot$ 1/2014--5/2014
@@ -220,14 +223,14 @@ Statistics Department$\cdot$ 1/2014--5/2014
 Independent study$\cdot$ 1/2014--8/2014
 
 	
-\section*{Computer Skills}
+\section*{ \faTerminal ~ Computer Skills}
 
 \begin{itemize}
-    \item \textbf{Languages} \ Python (pydata ecosystem), IPython Notebook, Bash, IDL, Excel
-    \item \textbf{Version Control and Writing} \ git, GitHub, \LaTeX, conda
-    \item \textbf{OS} \ Mac OS X, Unix/Linux
+    \item \textbf{Languages} \ Python (pandas and pydata ecosystem), Jupyter Notebooks, Bash, IDL, Excel
+    \item \textbf{Version Control and Writing} \ \faGit, \faGithub, \LaTeX, \texttt{conda}
+    \item \textbf{OS} \faApple, \faLinux
     \item \textbf{Podcast production} \ Audacity
-    \item \textbf{Exposure to} \ HTML, CSS, D3.js, Jekyll
+    \item \textbf{Exposure to} \ HTML, CSS, D3.js, Jekyll, Travis CI, Docker
     \item \textbf{Evangelist for} \ Data Science, Open Science, Reproducibility
 \end{itemize}
 
