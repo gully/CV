@@ -4,6 +4,9 @@
 \usepackage{color}
 \usepackage{enumerate}
 \usepackage{fancyhdr}
+\usepackage{fontspec}
+\defaultfontfeatures{
+    Path = /usr/local/texlive/2018/texmf-dist/fonts/opentype/public/fontawesome/ }
 \usepackage{fontawesome}
 \usepackage[resetlabels]{multibib}
 
@@ -49,7 +52,7 @@
 
 \begin{flushleft}
     \namestyle Michael A. Gully-Santiago \\[0.3em]
-    \addressstyle 
+    \addressstyle
     \faMapMarker ~ East Bay Area  \hfill \url{gully.github.io} ~ \faExternalLink \\
     ~ ~ Oakland, CA  \hfill  \url{www.linkedin.com/in/gullys} ~ \faLinkedin \\
     \faPhone ~ (617) 842-5905 \hfill \url{github.com/gully} ~ \faGithub \\
@@ -86,7 +89,19 @@ Boston University $\cdot$ Boston, MA $\cdot$ 9/2003--5/2007
 
 \section*{\faWrench ~ Research Experience and Technical Skills}
 
-\subparagraph{Postdoctoral Research}
+\subparagraph{Support Scientist}
+Kepler/K2 Guest Observer Office $\cdot$ Moffett Field, CA $\cdot$ 05/2017--\emph{present}
+\begin{itemize}
+    \item  \textbf{Advanced analytics, community support, software development:} Ongoing Kepler/K2 mission to measure precision time series of astrophysical and exoplanetary brightness variations
+\end{itemize}
+
+\subparagraph{Research Scientist}
+\texttt{baeri.org} at NASA Ames Research Center $\cdot$ Moffett Field, CA $\cdot$ 02/2017--05/2017
+\begin{itemize}
+    \item  \textbf{Forward modeling Keck and IRTF spectra:} Analysis of low resolution near-IR spectroscopy of young stars and brown dwarfs with collaborators T. Greene and M. Marley
+\end{itemize}
+
+\subparagraph{Postdoctoral Researcher}
 Kavli Institute for Astronomy and Astrophysics $\cdot$ Beijing, China $\cdot$ 10/2015--10/2016
 \begin{itemize}
     \item  \textbf{Forward modeling IGRINS spectra:} Analysis of high resolution, high bandwidth near-IR spectroscopy of young stars with collaborator G. Herczeg
@@ -95,7 +110,7 @@ Kavli Institute for Astronomy and Astrophysics $\cdot$ Beijing, China $\cdot$ 10
 \subparagraph{Si diffractive optics group, Dept. of Astronomy}
 University of Texas at Austin $\cdot$ Austin, TX $\cdot$ 9/2008--6/2014
 \begin{flushright}
-Microelectronics Research Center $\cdot$ Austin, TX $\cdot$ 9/2008--6/2013 
+Microelectronics Research Center $\cdot$ Austin, TX $\cdot$ 9/2008--6/2013
 
 Center for Nano and Molecular Science $\cdot$ Austin, TX $\cdot$ 9/2008--9/2013
 \end{flushright}
@@ -104,7 +119,7 @@ Center for Nano and Molecular Science $\cdot$ Austin, TX $\cdot$ 9/2008--9/2013
 \subparagraph{E-beam group, Microdevices Laboratory}
 NASA Jet Propulsion Lab $\cdot$ Pasadena, CA $\cdot$ 9/20010--9/2013
 
-\subparagraph{Magellan Telescope}
+\subparagraph{Guest Observer, Magellan Telescope}
 Las Campanas Observatory $\cdot$ La Serena, Chile $\cdot$ 2010--2012
 
 % Publications.
@@ -152,7 +167,7 @@ Las Campanas Observatory $\cdot$ La Serena, Chile $\cdot$ 2010--2012
     \item Poster, PPVI, Heidelberg, Germany, 7/2013
     \item Talk, Star Formation Lunch, Jet Propulsion Lab, Pasadena, CA, 6/2013
     \item \textbf{Poster, Award winner- $3^{rd}$/45}, Nano Night, Center for Nano- and Molecular Science, Austin, TX, 3/2013
-    \item Poster, McDonald Observatory Board of Visitors meeting, Austin, TX, 2/2013 
+    \item Poster, McDonald Observatory Board of Visitors meeting, Austin, TX, 2/2013
     \item \textbf{Invited Talk}, SPIE Astronomical Telescopes and Instrumentation, Amsterdam, NL, July, 2012
     \item Poster, Cool Stars 17, Barcelona, Spain, June 2012
     \item Attendee, American Astronomical Society meeting, Austin, TX, Jan, 2012
@@ -165,10 +180,10 @@ Las Campanas Observatory $\cdot$ La Serena, Chile $\cdot$ 2010--2012
 
 \section*{\faPlus ~ Teaching, Service, Leadership}
 
-\subparagraph{Statistical computing tutorial leader} 
+\subparagraph{Statistical computing tutorial leader}
 Kavli Institute for Astronomy \& Astrophysics $\cdot$ Beijing, China $\cdot$ 2015--2016
 
-\subparagraph{Mentor for undergraduate student, A. Turbyfill} 
+\subparagraph{Mentor for undergraduate student, A. Turbyfill}
 University of Texas at Austin $\cdot$ Austin, TX $\cdot$ 2013--2014
 
 \subparagraph{Graduate Student Representative}
@@ -184,7 +199,7 @@ Clay Center Observatory at the Dexter \& Southfield Schools  $\cdot$ Brookline, 
 \subparagraph{Adult and continuing education instructor}
 Brookline Adult Education  $\cdot$ Brookline, MA $\cdot$ 6/2005--6/2008
 
-\subparagraph{Night lab teaching assistant} 
+\subparagraph{Night lab teaching assistant}
 Boston University $\cdot$ Boston, MA $\cdot$ 2006--2007
 
 \section*{\faYoutubePlay ~ Public Outreach and Media Appearances}
@@ -194,7 +209,7 @@ KVRX, 91.7FM $\cdot$ Austin, TX$\cdot$ 12/2012
 	\begin{itemize}
 	    \item ``Discovery and characterization of brown dwarfs''
 	\end{itemize}
-	
+
 \subparagraph{Host, They Blinded Me with Science, a science podcast}
 KVRX, 91.7FM $\cdot$ Austin, TX$\cdot$ 5/2013--5/2014
 	\begin{itemize}
@@ -206,9 +221,9 @@ KVRX, 91.7FM $\cdot$ Austin, TX$\cdot$ 5/2013--5/2014
 \subparagraph{Public talks}
 	\begin{itemize}
 	    \item \textbf{Invited talk}, McDonald Observatory Board of Visitors meeting, Austin, TX, 2/2012 \\
-	    ``High resolution infrared spectroscopy with IGRINS'' 
+	    ``High resolution infrared spectroscopy with IGRINS''
 	    \item Science Under the Stars, Brackenridge Field Lab, Austin, TX, 12/2012 \\
-	    ``Exploring birth-sites of our Galactic neighborhood'' 
+	    ``Exploring birth-sites of our Galactic neighborhood''
 	\end{itemize}
 
 \subparagraph{Interactive museum-style educational installation}
@@ -222,7 +237,7 @@ Statistics Department$\cdot$ 1/2014--5/2014
 \subparagraph{Statistics, Data Mining and Machine Learning in Astronomy}
 Independent study$\cdot$ 1/2014--8/2014
 
-	
+
 \section*{ \faTerminal ~ Computer Skills}
 
 \begin{itemize}
