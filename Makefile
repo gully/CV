@@ -9,3 +9,5 @@ all:
 	rm *.blg
 	rm *.out
 	rm *.log
+	rm -f cv.fdb_latexmk
+	rm -f cv.fls
