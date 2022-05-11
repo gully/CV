@@ -8,3 +8,5 @@ all:
 	rm *.blg
 	rm *.out
 	rm *.log
+	rm -f resume.fdb_latexmk
+	rm -f resume.fls
