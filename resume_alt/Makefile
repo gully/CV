@@ -4,3 +4,4 @@ all:
 	rm *.aux
 	rm *.out
 	rm *.log
+	rm -f resume.fdb_latexmk
