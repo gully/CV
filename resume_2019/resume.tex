@@ -1,0 +1,128 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage{graphicx}
+\usepackage[colorlinks,urlcolor=blue]{hyperref}
+\usepackage{color}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage{fontspec}
+\usepackage{fontawesome}
+\usepackage[resetlabels]{multibib}
+
+% Set margins.
+\oddsidemargin=0.0in
+\evensidemargin=0.0in
+\textwidth=6.5in
+\voffset=-0.125in
+\headheight=0.0in
+\topmargin=0.0in
+\textheight=9.0in
+
+% Define colors.
+\definecolor{addresscolor}{rgb}{0.2,0.2,0.2}
+\definecolor{datecolor}{rgb}{0.5,0.5,0.5}
+
+% Turn off page numbering.
+\pagestyle{fancy}
+\fancyhf{}
+\lfoot{\datestyle M. Gully-Santiago, Ph.D.}
+%\cfoot{\datestyle \thepage}
+\rfoot{\datestyle July 2020}
+\renewcommand{\headrulewidth}{0.0pt}
+
+% Change font.
+\renewcommand{\familydefault}{\sfdefault}
+
+% Set parameters and content.
+\newcommand{\namestyle}{\Huge \scshape}
+\newcommand{\deptstyle}{\footnotesize \sffamily \scshape}
+\newcommand{\addressstyle}{\color{addresscolor}  \footnotesize \sffamily \upshape}
+\newcommand{\datestyle}{\color{datecolor} \footnotesize \sffamily \upshape}
+
+% Remove list labels.
+\renewcommand{\labelitemi}{}
+\renewcommand{\labelitemii}{}
+
+% Define bibliographies.
+\newcites{j,c}{Selected Publications, Contributing Author Publications}
+
+
+\begin{document}
+
+% Print title.
+\begin{flushleft}
+    \namestyle Michael A. Gully-Santiago \\[0.3em]
+    \addressstyle
+    \faMapMarker ~ 2515 Speedway, Stop C1400  \hfill \url{gully.github.io} ~ \faExternalLink \\
+    ~ ~ Austin, Texas 78712-1205  \hfill  \url{www.linkedin.com/in/gullys} ~ \faLinkedin \\
+    \faPhone ~ (617) 842-5905 \hfill \url{github.com/gully} ~ \faGithub \\
+    \faGlobe ~ US Citizen \hfill \textbf{igully@utexas.edu} ~ \faInbox\\
+
+\end{flushleft}
+
+\small
+
+\section*{\faInstitution ~ Education and Experience}
+
+\subparagraph{Research Fellow}
+University of Texas at Austin $\cdot$ Austin, TX $\cdot$  2/2020 -- present
+
+\subparagraph{Support Scientist}
+Kepler/K2 Guest Observer Office $\cdot$ Moffett Field, CA $\cdot$ 05/2017--01/2020
+
+\subparagraph{Research Scientist}
+\texttt{baeri.org} at NASA Ames Research Center $\cdot$ Moffett Field, CA $\cdot$ 02/2017--05/2017
+\begin{itemize}
+    \item  \textbf{Forward modeling Keck and IRTF spectra:} Analysis of low resolution near-IR spectroscopy of young stars and brown dwarfs with collaborators T. Greene and M. Marley
+\end{itemize}
+
+\subparagraph{Postdoctoral Researcher}
+Kavli Institute for Astronomy and Astrophysics $\cdot$ Beijing, China $\cdot$ 10/2015--10/2016
+\begin{itemize}
+    \item  \textbf{Forward modeling IGRINS spectra:} Analysis of high resolution, high bandwidth near-IR spectroscopy of young stars with collaborator G. Herczeg
+\end{itemize}
+
+
+\subparagraph{\textbf{Ph.D}., Astronomy}
+The University of Texas at Austin $\cdot$ Austin, TX $\cdot$ 8/2008--5/2015
+\begin{itemize}
+    \item \faRocket ~ NASA GSRP Fellow, JPL Microdevices Lab, 9/2010-9/2013
+\end{itemize}
+
+
+
+\subparagraph{\textbf{B. A.}, Astronomy \& Physics}
+Boston University $\cdot$ Boston, MA $\cdot$ 9/2003--5/2007
+
+\section*{\faLineChart ~ Open Source Software Development}
+
+\subparagraph{\faHourglassHalf ~ \texttt{lightkurve}: Time series data analysis for Kepler/K2/TESS}
+\href{https://github.com/KeplerGO/lightkurve}{github.com/KeplerGO/lightkurve}
+
+\subparagraph{\faCodeFork ~ \texttt{Starfish}: Open source statistical framework for spectral inference}
+\href{https://github.com/gully/Starfish}{github.com/gully/Starfish}
+
+
+%\section*{\faTerminal ~ Computer Skills and Communication}
+
+%\begin{itemize}
+%    \item \textbf{Python}: \texttt{Jupyter Notebooks, pandas, numpy, scipy, matplotlib, seaborn, emcee, multiprocessing}
+%    \item \textbf{Other:} shell scripting, \faGit, \faGithubAlt, \LaTeX, conda, SLURM,  \faApple, \faLinux, Interactive Data Language (IDL)
+%\end{itemize}
+
+
+% Publications.
+\bibliographystylej{IEEEtran}
+%\bibliographystylec{IEEEtran}
+
+
+\nocitej{2017ApJ...836..200G}
+\nocitej{2015ApOpt..5410177G}
+\nocitej{2014SPIE.9151E..5KG}
+\nocitej{2018ApJ...868..143G}
+\nocitej{2018ApJ...862...85G}
+\nocitej{2017PASP..129f5004D}
+\bibliographyj{gullyCV}
+%\bibliographyc{gullyCV}
+
+
+\end{document}
